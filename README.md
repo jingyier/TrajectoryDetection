@@ -1,7 +1,5 @@
 # 虚拟画笔系统
 
-![虚拟画笔系统示意图](https://via.placeholder.com/600x400.png?text=Virtual+Brush+System+Demo)
-
 ## 项目概述
 这是一个基于计算机视觉的交互式虚拟画笔系统，结合摄像头输入和颜色检测技术，实现以下功能：
 - 实时颜色检测与跟踪
@@ -34,11 +32,57 @@
 ## 安装步骤
 
 ### 环境准备
-```bash
-# 创建虚拟环境（可选）
+
+- 创建虚拟环境（可选）
+``` bash
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
+```
 
-# 安装依赖
+- 安装依赖
+```
 pip install opencv-python numpy gradio
+```
+
+
+## 使用说明
+
+- 运行程序后自动启动摄像头
+- 访问 http://localhost:7860 打开Web界面
+-----------
+界面分为三个主要区域：
+
+顶部：颜色参数调节面板
+中部：实时画布预览
+底部：控制按钮
+------------
+
+
+### 操作流程
+
+
+​#### 颜色检测调节​
+
+选择目标颜色（蓝/绿/黄）
+调节对应HSV参数（H Min/H Max/S Min/S Max/V Min/V Max）
+观察实时检测效果
+
+
+
+#### ​绘画操作​
+
+点击"开始绘画"按钮
+在摄像头画面中移动手部进行绘制
+使用清空按钮重置画布
+
+
+
+​#### 参数动态调节​
+
+实时调节HSV参数可立即看到检测效果变化
+参数范围：
+
+H (0-179)
+S (0-255)
+V (0-255)
