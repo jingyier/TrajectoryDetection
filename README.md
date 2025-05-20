@@ -62,7 +62,7 @@ pip install opencv-python numpy gradio
 ### 操作流程
 
 
-​#### 颜色检测调节​
+​- 颜色检测调节​
 
 选择目标颜色（蓝/绿/黄）
 调节对应HSV参数（H Min/H Max/S Min/S Max/V Min/V Max）
@@ -78,7 +78,7 @@ pip install opencv-python numpy gradio
 
 
 
-​#### 参数动态调节​
+​- 参数动态调节​
 
 实时调节HSV参数可立即看到检测效果变化
 参数范围：
